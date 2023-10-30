@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Order</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231030101654">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap&_v=20231030101654" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="clothes.html" class="menu__link">Clothes</a></li>
+							<!-- <li class="menu__item"><a href="#" class="menu__link">Shoes</a></li> -->
+							<li class="menu__item"><a href="#" class="menu__link">Accessories</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__logo">
+					<a href="home.html"><img src="img/logo.svg" alt="" /></a>
+				</div>
+				<div class="header__form-item">
+					<button type="submit" class="header__button_mobile _icon-search"></button>
+					<form class="header__form">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search..." class="header__input" />
+						<button type="submit" class="header__button _icon-search"></button>
+					</form>
+				</div>
+				<div class="header__actions actions-header">
+					<a href="pagewithdashboard.html" class="actions-header__user _icon-user"></a>
+					<a href="basket.html" class="actions-header__basket _icon-court"></a>
+					<a href="favorites.html" class="actions-header__favorites _icon-like"> </a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__order order">
+				<div class="order__container">
+					<a href="basket.html" class="order__back _icon-arrow-up">Back </a>
+					<div class="order__body">
+						<div class="order__address address">
+							<div class="address__body">
+								<div class="address__checkbox checkbox">
+									<input id="address" class="checkbox__real-checkbox" type="checkbox" />
+									<label for="address" class="checkbox__custom-checkbox checkbox__custom-checkbox_circle"><span class="checkbox__checkbox-text checkbox__checkbox-text_order">Shipping Address</span></label>
+								</div>
+								<form action="#" class="address__form">
+									<div class="addres__item item-form">
+										<input id="addres-email" required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="addres__input item-form__input" />
+										<label class="addres__label item-form__label" for="addres-email">Email</label>
+									</div>
+									<div class="addres__item item-form">
+										<input id="addres-name" required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="addres__input item-form__input" />
+										<label class="addres__label item-form__label" for="addres-name">Full name</label>
+									</div>
+									<div class="addres__item item-form">
+										<input id="addres-address" required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="addres__input item-form__input" />
+										<label class="addres__label item-form__label" for="addres-address">Addres</label>
+									</div>
+									<div class="addres__item item-form">
+										<input id="addres-city" required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="addres__input item-form__input" />
+										<label class="addres__label item-form__label" for="addres-city">City</label>
+									</div>
+									<div class="addres__item item-form">
+										<input id="addres-phone" required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="addres__input item-form__input" />
+										<label class="addres__label item-form__label" for="addres-phone">Phone number</label>
+									</div>
+									<div class="address__checkbox checkbox address__checkbox_default-address">
+										<input id="default-address" class="checkbox__real-checkbox" type="checkbox" />
+										<label for="default-address" class="checkbox__custom-checkbox"><span class="checkbox__checkbox-text checkbox__checkbox-text_default-address">Set default shipping
+												address</span></label>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="order__delivery-payment delivery-payment">
+							<div class="delivery-payment__wrapper">
+								<div class="delivery-payment__delivery delivery">
+									<div class="delivery__body">
+										<div class="delivery__title order-title">Delivery method</div>
+										<!-- <div class="delivery__checkbox checkbox">
+                                            <input id="delivery" class="checkbox__real-checkbox" type="checkbox" />
+                                            <label for="delivery" class="checkbox__custom-checkbox  checkbox__custom-checkbox_circle"><span
+                                                    class="checkbox__checkbox-text checkbox__checkbox-text_order">Delivery method</span></label>
+                                        </div> -->
+										<div class="delivery__radio-items ">
+											<div class="delivery__radio-item radio">
+												<input data-check-cash id="delivery-radio-cash" name="delivery" checked class="radio__real-radio" type="radio" />
+												<label for="delivery-radio" class="radio__custom-radio"><span class="radio__radio-text">$10</span></label>
+											</div>
+											<div class="delivery__radio-item">
+												<input data-check-free id="delivery-radio-free" name="delivery" class="radio__real-radio" type="radio" />
+												<label for="delivery-radio-free" class="radio__custom-radio"><span class="radio__radio-text">Delivery
+														free</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="delivery-payment__payment payment">
+									<div class="payment__body">
+										<div class="payment__title order-title">Payment Methods</div>
+										<!-- <div class="payment__checkbox checkbox">
+                                            <input id="payment" class="checkbox__real-checkbox" type="checkbox" />
+                                            <label for="payment" class="checkbox__custom-checkbox  checkbox__custom-checkbox_circle"><span
+                                                    class="checkbox__checkbox-text checkbox__checkbox-text_order">Payment Methods</span></label>
+                                        </div> -->
+										<div class="payment__radio-items radio-items-payment">
+											<div class="radio-items-payment__radio-body">
+												<div class="radio-items-payment__item radio">
+													<input id="payment-card-radio" name="payment" checked class="radio__real-radio" type="radio" />
+													<label for="payment-card-radio" class="radio__custom-radio"><span class="radio__radio-text">Pay with
+															card</span></label>
+												</div>
+												<p>(Get 5% off total price and money back guarantee)</p>
+											</div>
+											<div class="radio-items-payment__text">You will be redirected to Paystack payment gateway</div>
+											<div class="radio-items-payment__radio-body">
+												<div class="radio-items-payment__item radio">
+													<input id="payment-on-dilivery-radio" name="payment" class="radio__real-radio" type="radio" />
+													<label for="payment-on-dilivery-radio" class="radio__custom-radio"><span class="radio__radio-text">Delivery
+															free </span></label>
+												</div>
+												<ul class="radio-items-payment__list">
+													<li class="radio-items-payment__link">Kindly note that we will only accept POS payment option on delivery
+													</li>
+													<li class="radio-items-payment__link">You have to make payment before opening package</li>
+													<li class="radio-items-payment__link">Once the seal is broken, item can only be returned if damaged or
+														defective</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order__summary summary">
+							<div class="summary__body">
+								<div class="summary__title">ORDER SUMMARY</div>
+								<div class="summary__products-body">
+									<!-- <article class="summary__product product-summary">
+                                        <a href="#" class="product-summary__image"><picture><source srcset="img/products-image/01.webp" type="image/webp"><img src="img/products-image/01.jpg" alt="product-image"></picture></a>
+                                        <div class="product-summary__content">
+                                            <div class="product-summary__title">Multicolored armless top</div>
+                                            <div class="product-summary__size">Size - EU: 36 US: 5.5</div>
+                                            <div class="product-summary__price">$10</div>
+                                            <div class="product-summary__actions quantity-item quantity-item_summary">
+                                                <div class="quantity-item__wrapper">
+                                                    <button type="submit" class="quantity-item__button quantity-item__button_minus"></button>
+                                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" value="1" class="quantity-item__input">
+                                                    <button type="submit" class="quantity-item__button quantity-item__button_plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article data-cart-id="1" class="summary__product product-summary">
+                                        <a href="#" class="product-summary__image"><picture><source srcset="img/products-image/01.webp" type="image/webp"><img src="img/products-image/01.jpg" alt="product-image"></picture></a>
+                                        <div class="product-summary__content">
+                                            <div class="product-summary__title">Multicolored armless top</div>
+                                            <div class="product-summary__size">Size - EU: 36 US: 5.5</div>
+                                            <div class="product-summary__price">$10</div>
+                                            <div class="item-basket__wrapper-quantity quantity-item">
+                                                <div class="quantity-item__wrapper">
+                                                    <button type="submit" class="quantity-item__button quantity-item__button_minus"></button>
+                                                    <div class="quantity-item__input">1</div>
+                                                    <button type="submit" class="quantity-item__button quantity-item__button_plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="summary__product product-summary">
+                                        <a href="#" class="product-summary__image"><picture><source srcset="img/products-image/01.webp" type="image/webp"><img src="img/products-image/01.jpg" alt="product-image"></picture></a>
+                                        <div class="product-summary__content">
+                                            <div class="product-summary__title">Multicolored armless top</div>
+                                            <div class="product-summary__size">Size - EU: 36 US: 5.5</div>
+                                            <div class="product-summary__price">$10</div>
+                                            <div class="product-summary__actions quantity-item quantity-item_summary">
+                                                <div class="quantity-item__wrapper">
+                                                    <button type="submit" class="quantity-item__button quantity-item__button_minus"></button>
+                                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" value="1" class="quantity-item__input">
+                                                    <button type="submit" class="quantity-item__button quantity-item__button_plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article> -->
+								</div>
+								<div class="summary__summ-price price-summ">
+									<div class="price-summ__body">
+										<div class="price-summ__item">
+											<div class="price-summ__text">Cart sub-total</div>
+											<div class="price-summ__sub-price">$0</div>
+										</div>
+										<!-- <div class="price-summ__item">
+                                            <div class="price-summ__text">Card discount</div>
+                                            <div class="price-summ__card-discount-price">$10</div>
+                                        </div> -->
+										<div class="price-summ__item">
+											<div data-delivery-price-from="100" class="price-summ__text">Free Delivery from 100$</div>
+											<div data-delivery-price="10" class="price-summ__delivery-price">$10</div>
+										</div>
+									</div>
+								</div>
+								<div class="summary__total total-summary">
+									<div class="total-summary__body">
+										<div class="total-summary__text">TOTAl </div>
+										<div class="total-summary__price">$<span>0</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order__place place-order">
+						<div class="place-order__body">
+							<div class="place-order__item item-place-order">
+								<p>Is this a gift?</p>
+								<div class="item-place-order__buttons">
+									<button type="button" class="item-place-order__button button">Yes</button>
+									<button type="button" class="item-place-order__button button item-place-order__button_border">No</button>
+								</div>
+							</div>
+							<div class="place-order__text">A complimentary gift receipt will be included in the package, and prices will be hidden on the
+								receipt.</div>
+							<div class="place-order__button button">PLACE ORDER</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo"><a href="" class=""><img src="img/logo.svg" alt=""></a></div>
+				<div class="footer__menu menu-footer">
+					<nav class="menu-footer__body">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">About Us</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">Contact</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">Terms & Conditions</a></li>
+						</ul>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link _icon-facebook">Facebook</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link _icon-twitter">Twitter</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link _icon-instagram">Instagram</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__form form-footer">
+					<div class="form-footer__text">Subsribe to our newsletter</div>
+					<form action="#" class="form-footer__form">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email Addres" class="form-footer__input">
+						<button type="submit" class="form-footer__button">OK</button>
+					</form>
+				</div>
+				<div class="form-footer__connection connection-form">
+					<div class="connection-form__addres">497 Evergeen Rd. Roseville, CA 95673</div>
+					<a href="tel:+44345678903" class="connection-form__tellephone">+44 345 678 903</a>
+					<a href="mailto:adobexd@mail.com" class="connection-form__mail">adobexd@mail.com</a>
+				</div>
+			</div>
+		</footer>
+	</div> <!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20231030101654"></script>
+
+
+
+</body>
+
+</html>

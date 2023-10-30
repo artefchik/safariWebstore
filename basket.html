@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Basket</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231030101654">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap&_v=20231030101654" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="clothes.html" class="menu__link">Clothes</a></li>
+							<!-- <li class="menu__item"><a href="#" class="menu__link">Shoes</a></li> -->
+							<li class="menu__item"><a href="#" class="menu__link">Accessories</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__logo">
+					<a href="home.html"><img src="img/logo.svg" alt="" /></a>
+				</div>
+				<div class="header__form-item">
+					<button type="submit" class="header__button_mobile _icon-search"></button>
+					<form class="header__form">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search..." class="header__input" />
+						<button type="submit" class="header__button _icon-search"></button>
+					</form>
+				</div>
+				<div class="header__actions actions-header">
+					<a href="pagewithdashboard.html" class="actions-header__user _icon-user"></a>
+					<a href="basket.html" class="actions-header__basket _icon-court"></a>
+					<a href="favorites.html" class="actions-header__favorites _icon-like"> </a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__basket basket">
+				<div class="basket__container">
+					<div class="basket__header">
+						<h3 class="basket__title">Shopping Cart (<span>0</span> items)</h3>
+						<button class="basket__clear-all button">Remove All</button>
+					</div>
+					<div class="basket__wrapper">
+					</div>
+					<div class="basket__sum sum-basket">
+						<div class="sum-basket__body-content">
+							<div class="sum-basket__total-price">TOTAL: <span></span></div>
+							<div class="sum-basket__text">Delivery fee not included yet</div>
+						</div>
+						<div class="sum-basket__buttons">
+							<a href="home.html" type="submit" class="sum-basket__button button sum-basket__button_continue">CONTINUE SHOPPING</a>
+							<a href="order.html" type="submit" class="sum-basket__button button sum-basket__button_checkout">PROCEED TO CHECKOUT</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo"><a href="" class=""><img src="img/logo.svg" alt=""></a></div>
+				<div class="footer__menu menu-footer">
+					<nav class="menu-footer__body">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">About Us</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">Contact</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link">Terms & Conditions</a></li>
+						</ul>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link _icon-facebook">Facebook</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link _icon-twitter">Twitter</a></li>
+							<li class="menu-footer__item"><a href="#" class="menu-footer__link _icon-instagram">Instagram</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__form form-footer">
+					<div class="form-footer__text">Subsribe to our newsletter</div>
+					<form action="#" class="form-footer__form">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email Addres" class="form-footer__input">
+						<button type="submit" class="form-footer__button">OK</button>
+					</form>
+				</div>
+				<div class="form-footer__connection connection-form">
+					<div class="connection-form__addres">497 Evergeen Rd. Roseville, CA 95673</div>
+					<a href="tel:+44345678903" class="connection-form__tellephone">+44 345 678 903</a>
+					<a href="mailto:adobexd@mail.com" class="connection-form__mail">adobexd@mail.com</a>
+				</div>
+			</div>
+		</footer>
+	</div> <!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20231030101654"></script>
+
+
+
+</body>
+
+</html>
